@@ -1,10 +1,11 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
-  uses: ngalaiko/bazel-action@2.0.0
-  with:
-    # Arguments to the bazel command
-    args: bazel build fg_lite_test
+uses: abhinavsingh/setup-bazel@v3
+with:
+  # Bazel version to install e.g. 1.2.1, 2.0.0, ...
+  version: # optional, default is 2.0.0
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
